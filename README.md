@@ -9,6 +9,7 @@ This role installs and configures [Atom text editor](https://atom.io).
   - each item has to have key _package_name_ containing name of package
 
     Example:
+
     ~~~yaml
     atom_editor:
       packages:

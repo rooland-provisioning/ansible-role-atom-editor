@@ -5,7 +5,7 @@
     state:  present
 
 - name: Install packages
-  shell:  apm install {{item.package_name}}
+  shell:  "apm install {{item.package_name}}"
   args:
-    creates: ~/.atom/packages/{{item.package_name}}
+    creates: "~/.atom/packages/{{item.package_name}}"
   with_items: "{{atom_editor.packages}}"

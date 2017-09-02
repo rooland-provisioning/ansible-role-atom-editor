@@ -3,6 +3,7 @@
   homebrew_cask:
     name:   atom
     state:  present
+  ignore_errors: yes
 
 - name: Install packages
   shell:  "apm install {{item.package_name}}"
